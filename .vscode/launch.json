@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug MCP (streamable-http)",
+      "type": "python",
+      "request": "launch",
+      "module": "matplotlib_mcp.server",
+      "args": ["--transport", "streamable-http"],
+      "justMyCode": true
+    },
+    {
+      "name": "Debug MCP (stdio)",
+      "type": "python",
+      "request": "launch",
+      "module": "matplotlib_mcp.server",
+      "args": ["--transport", "stdio"],
+      "justMyCode": true
+    }
+  ]
+}

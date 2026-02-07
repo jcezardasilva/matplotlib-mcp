@@ -1,0 +1,14 @@
+{
+    "servers": {
+        "matplotlib-line-chart": {
+            "type": "stdio",
+            "command": "python",
+            "args": [
+                "-m",
+                "matplotlib_mcp.server",
+                "--transport",
+                "stdio"
+            ]
+        }
+    }
+}

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import argparse
-from services.line_chart_service import mcp
+from services.chart_service import mcp
 
 
 def main() -> None:

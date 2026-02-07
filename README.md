@@ -1,6 +1,6 @@
 # Matplotlib MCP (FastMCP)
 
-Servidor MCP em Python com FastMCP, transport streamable HTTP e uma tool para renderizar gráficos de linha com múltiplas séries.
+Servidor MCP em Python com FastMCP, transport streamable HTTP e tools para múltiplos tipos de gráficos.
 
 ## UV
 
@@ -20,23 +20,30 @@ Servidor MCP em Python com FastMCP, transport streamable HTTP e uma tool para re
 
 ## Tools disponíveis
 
-- `render_line_chart`: gera um gráfico de linha com múltiplas séries e retorna uma imagem.
-- `render_bar_chart`: gera um gráfico de barras com múltiplas séries e retorna uma imagem.
+- `render_line_chart` (linha)
+- `render_bar_chart` (barras)
+- `render_scatter_chart` (dispersão)
+- `render_area_chart` (área)
+- `render_histogram_chart` (histograma)
+- `render_boxplot_chart` (boxplot)
+- `render_heatmap_chart` (heatmap)
+- `render_stacked_bar_chart` (barras empilhadas)
+- `render_line_markers_chart` (linha com marcadores)
+- `render_pie_chart` (pizza)
+- `render_donut_chart` (rosca)
 
-### Exemplo de entrada
+## Examples (Resources)
 
-```json
-{
-  "title": "Vendas por mês",
-  "x_label": "Mês",
-  "y_label": "Vendas",
-  "series": [
-    {"label": "Produto A", "y": [10, 20, 18, 25]},
-    {"label": "Produto B", "x": [1, 2, 3, 4], "y": [8, 15, 22, 19]}
-  ],
-  "width": 900,
-  "height": 500,
-  "dpi": 100,
-  "show_grid": true
-}
-```
+Cada gráfico possui um resource com exemplo em JSON (mimeType application/json):
+
+- `examples://charts/line`
+- `examples://charts/bar`
+- `examples://charts/scatter`
+- `examples://charts/area`
+- `examples://charts/histogram`
+- `examples://charts/boxplot`
+- `examples://charts/heatmap`
+- `examples://charts/stacked-bar`
+- `examples://charts/line-markers`
+- `examples://charts/pie`
+- `examples://charts/donut`
